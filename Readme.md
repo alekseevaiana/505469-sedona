@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Iana Alekseeva](https://up.htmlacademy.ru/htmlcss/20/user/505469).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Сенин] (https://up.htmlacademy.ru/htmlcss/20/user/320161).
 
 ---
 
