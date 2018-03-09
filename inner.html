@@ -7,41 +7,87 @@
 </head>
 
 <body>
-  <a class="main-logo">
+  <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-logo">
     <img src="img/logo_mobile.png" alt="Логотип" width="138" height="70">
   </a>
   <nav class="main-navigation">
     <ul class="site-navigation">
       <li>
-        <a href="#">Информация</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Информация</a>
       </li>
       <li>
-        <a href="#">Фото и видео</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Фото и видео</a>
       </li>
       <li>
-        <a href="#">Карта штата</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Карта штата</a>
       </li>
       <li>
-        <a href="#" class="site-navigation-current">Гостиницы</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="site-navigation-current">Гостиницы</a>
       </li>
     </ul>
   </nav>
+  <form class="infrastructure" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset>
+      <legend>Инфраструктура</legend>
+      <p>
+        <input type="checkbox" class="visually-hidden" name="pool" id="infrastructure-pool" checked>
+        <label for="infrastructure-pool">Бассейн</label>
+      </p>
+      <p>
+        <input type="checkbox" class="visually-hidden" name="parking" id="infrastructure-parking">
+        <label for="infrastructure-parking">Парковка</label>
+      </p>
+      <p>
+        <input type="checkbox" class="visually-hidden" name="wi-fi" id="infrastructure-wi-fi">
+        <label for="infrastructure-wi-fi">Бассейн</label>
+      </p>
+    </fieldset>
+  </form>
+  <form class="living-type" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset>
+      <legend>Тип жилья</legend>
+      <p>
+        <input type="checkbox" class="visually-hidden" name="hotel" id="living-type-hotel" checked>
+        <label for="living-type-hotel">Гостиница</label>
+      </p>
+      <p>
+        <input type="checkbox" class="visually-hidden" name="motel" id="living-type-motel" checked>
+        <label for="living-type-motel">Парковка</label>
+      </p>
+      <p>
+        <input type="checkbox" class="visually-hidden" name="wi-fi" id="living-type-apartment" checked>
+        <label for="living-type-apartment">Бассейн</label>
+      </p>
+    </fieldset>
+  </form>
+  <form action="https://echo.htmlacademy.ru" class="range-form">
+    <p>
+      <label for="price-one-night">Стоимость в сутки (Р):</label>
+    </p>
+    <p>
+      <input type="range" name="price" id="price-one-night" min="0" max="3000" step="1">
+    </p>
+    <p>
+      <input type="submit" value="Найти">
+    </p>
+  </form>
+
   <div class="sorting">
     <h3>Найдено: 3</h3>
     <p>Сортировка:</p>
     <ul>
       <li>
-        <a href="">По цене</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">По цене</a>
       </li>
       <li>
-        <a href="">По типу</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">По типу</a>
       </li>
       <li>
-        <a href="">По рейтингу</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">По рейтингу</a>
       </li>
     </ul>
-    <span>Кнопочка вверх</span>
-    <span>Кнопочка вниз</span>
+    <button class="button visually-hidden">Кнопочка вверх</button>
+    <button class="button visually-hidden">Кнопочка вниз</button>
   </div>
   <ul class="hotels-list">
     <li class="hotels-list-item hotel">
@@ -49,11 +95,11 @@
         <img src="img/hotels-1.jpg" alt="Фото гостиницы" width="150" height="100">
       </p>
       <h3>
-        <a>Amara resort &amp; spa</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Amara resort &amp; spa</a>
       </h3>
       <div class="hotel-first-column">
         <p>Гостиница</p>
-        <a href="#" class="hotel-more">Подробнее</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="hotel-more">Подробнее</a>
       </div>
       <div class="hotel-second-column">
         <p>от 4000 р.</p>
@@ -69,16 +115,16 @@
         <img src="img/hotels-2.jpg" alt="Фото апартаментов" width="150" height="100">
       </p>
       <h3>
-        <a>Desert Quail Inn</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Desert Quail Inn</a>
       </h3>
       <div class="hotel-first-column">
         <p>Мотель</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="hotel-more">Подробнее</a>
       </div>
       <div class="hotel-second-column">
         <p>от 3000 р.</p>
-        <a href="#" class="hotel-more">Подробнее</a>
+        <button class="hotel-book-иет">Забронировать</button>
       </div>
-      <button class="hotel-book-иет">Забронировать</button>
       <div class="hotel-rating">
         <img src="http://placehold.it/150x100" alt="Звездочки" width="60" height="20">
         <p class="hotel-rating-text">Рейтинг 8,9</p>
@@ -86,14 +132,14 @@
     </li>
     <li class="hotels-list-item hotel">
       <p>
-        <img src="img/hotels-3.jpg" alt="Фото мотеля" width="150" height="100">
+        <img src="img/hotels-3.jpg" alt="Фото апартаментов" width="150" height="100">
       </p>
       <h3>
         <a>Desert Quail Inn</a>
       </h3>
       <div class="hotel-first-column">
         <p>Апартаменты</p>
-        <a href="#" class="hotel-more">Подробнее</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="hotel-more">Подробнее</a>
       </div>
       <div class="hotel-second-column">
         <p>от 2000 р.</p>
@@ -109,17 +155,17 @@
     <p class="footer-hashtag">#Visitsedona</p>
     <ul class="social-btn-list">
       <li>
-        <a class="social-btn social-btn-twitter">T</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="social-btn social-btn-twitter" aria-label="Твиттер">T</a>
       </li>
       <li>
-        <a class="social-btn social-btn-twitter">T</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="social-btn social-btn-twitter" aria-label="Фейсбук">Ф</a>
       </li>
       <li>
-        <a class="social-btn social-btn-yt">Y</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="social-btn social-btn-yt" aria-label="YouTube">Y</a>
       </li>
     </ul>
     <p>Website by</p>
-    <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+    <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML-Academy">
       <img src="img/logo-htmlacademy.svg" alt="Лого HTML-Academy" width="115" height="41">
     </a>
   </footer>

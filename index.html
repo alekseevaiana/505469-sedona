@@ -7,22 +7,22 @@
 </head>
 
 <body>
-  <a class="main-logo">
-    <img src="img/logo_mobile.png" alt="Логотип" width="138" height="70">
+  <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-logo">
+    <img src="img/logo_mobile.png" alt="Логотип Седоны" width="138" height="70">
   </a>
-  <nav class="main-navigation">
+  <nav class="main-navigation" aria-label="Содержимое сайта">
     <ul class="site-navigation">
       <li>
-        <a href="#">Информация</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Информация</a>
       </li>
       <li>
-        <a href="#">Фото и видео</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Фото и видео</a>
       </li>
       <li>
-        <a href="#">Карта штата</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Карта штата</a>
       </li>
       <li>
-        <a href="#">Гостиницы</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Гостиницы</a>
       </li>
     </ul>
   </nav>
@@ -41,6 +41,7 @@
       <img src="img/town_full.jpg" alt="Фото города" width="800" height="255">
     </section>
     <section class="recommendations">
+      <h2 class="visually-hidden">Рекомендации</h2>
       <ul class="recommendations-list">
         <li class="recommendation-item">
           <img src="img/icon-1.svg" alt="Жилье" width="75" height="72">
@@ -88,23 +89,40 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,
         <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="btn-search">Поиск гостиниц в Седоне</button>
+      <button type="button" class="button btn-search">Поиск гостиниц в Седоне</button>
+      <form action="https://echo.htmlacademy.ru" class="searching-form">
+        <p>
+          <label for="searching-form-check-in">Дата заезда:</label>
+          <input type="date" name="date" id="searching-form-check-in">
+        </p>
+        <p>
+          <label for="searching-form-check-out">Дата выезда:</label>
+          <input type="date" name="date" id="searching-form-check-out">
+        </p>
+        <label for="adults-quantity">Взрослые:</label>
+        <input type="number" name="quantity" id="adults-quantity" min="1">
+        <label for="children-quantity">Дети:</label>
+        <input type="number" name="quantity" id="children-quantity" min="0">
+        <p>
+          <input type="submit" value="Найти">
+        </p>
+      </form>
     </section>
     <div class="map">
-      <img src="img/map.png" alt="Карта" width="768" height="594">
+      <img src="img/map.png" alt="Карта Седоны" width="768" height="594">
     </div>
   </main>
   <footer class="main-footer">
     <p class="footer-hashtag">#Visitsedona</p>
     <ul class="social-btn-list">
       <li>
-        <a class="social-btn social-btn-twitter">T</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="social-btn social-btn-twitter" aria-label="Твиттер">T</a>
       </li>
       <li>
-        <a class="social-btn social-btn-twitter">T</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="social-btn social-btn-twitter" aria-label="Фейсбук">Ф</a>
       </li>
       <li>
-        <a class="social-btn social-btn-yt">Y</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="social-btn social-btn-yt" aria-label="Ютьюб">Y</a>
       </li>
     </ul>
     <p>Website by</p>
