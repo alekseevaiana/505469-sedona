@@ -26,41 +26,41 @@
       </li>
     </ul>
   </nav>
-  <form class="infrastructure" action="https://echo.htmlacademy.ru" method="post">
+  <form class="filter-search" action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
       <legend>Инфраструктура</legend>
-      <p>
-        <input type="checkbox" class="visually-hidden" name="pool" id="infrastructure-pool" checked>
-        <label for="infrastructure-pool">Бассейн</label>
-      </p>
-      <p>
-        <input type="checkbox" class="visually-hidden" name="parking" id="infrastructure-parking">
-        <label for="infrastructure-parking">Парковка</label>
-      </p>
-      <p>
-        <input type="checkbox" class="visually-hidden" name="wi-fi" id="infrastructure-wi-fi">
-        <label for="infrastructure-wi-fi">Бассейн</label>
-      </p>
+      <ul class="filter-list">
+        <li>
+          <input type="checkbox" class="visually-hidden" name="pool" id="infrastructure-pool" checked>
+          <label for="infrastructure-pool">Бассейн</label>
+        </li>
+        <li>
+          <input type="checkbox" class="visually-hidden" name="parking" id="infrastructure-parking">
+          <label for="infrastructure-parking">Парковка</label>
+        </li>
+        <li>
+          <input type="checkbox" class="visually-hidden" name="wi-fi" id="infrastructure-wi-fi">
+          <label for="infrastructure-wi-fi">Бассейн</label>
+        </li>
+      </ul>
     </fieldset>
-  </form>
-  <form class="living-type" action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
       <legend>Тип жилья</legend>
-      <p>
-        <input type="checkbox" class="visually-hidden" name="hotel" id="living-type-hotel" checked>
-        <label for="living-type-hotel">Гостиница</label>
-      </p>
-      <p>
-        <input type="checkbox" class="visually-hidden" name="motel" id="living-type-motel" checked>
-        <label for="living-type-motel">Парковка</label>
-      </p>
-      <p>
-        <input type="checkbox" class="visually-hidden" name="wi-fi" id="living-type-apartment" checked>
-        <label for="living-type-apartment">Бассейн</label>
-      </p>
+      <ul class="filter-list">
+        <li>
+          <input type="checkbox" class="visually-hidden" name="hotel" id="living-type-hotel" checked>
+          <label for="living-type-hotel">Гостиница</label>
+        </li>
+        <li>
+          <input type="checkbox" class="visually-hidden" name="motel" id="living-type-motel" checked>
+          <label for="living-type-motel">Парковка</label>
+        </li>
+        <li>
+          <input type="checkbox" class="visually-hidden" name="wi-fi" id="living-type-apartment" checked>
+          <label for="living-type-apartment">Бассейн</label>
+        </li>
+      </ul>
     </fieldset>
-  </form>
-  <form action="https://echo.htmlacademy.ru" class="range-form">
     <p>
       <label for="price-one-night">Стоимость в сутки (Р):</label>
     </p>
@@ -71,7 +71,6 @@
       <input type="submit" value="Найти">
     </p>
   </form>
-
   <div class="sorting">
     <h3>Найдено: 3</h3>
     <p>Сортировка:</p>
