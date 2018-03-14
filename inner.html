@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона-отели</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +25,7 @@
         <a href="#">Карта штата</a>
       </li>
       <li>
-        <a href="inner.html" class="site-navigation-current">Гостиницы</a>
+        <a href="inner.html" class="active">Гостиницы</a>
       </li>
     </ul>
   </nav>
@@ -68,15 +71,15 @@
       <input type="range" name="price" id="price-one-night" min="0" max="3000" step="1">
     </p>
     <p>
-      <input type="submit" value="Найти">
+      <input type="submit" value="Показать" class="filter-search-btn">
     </p>
   </form>
   <div class="sorting">
     <h3>Найдено: 3</h3>
     <p>Сортировка:</p>
-    <ul>
+    <ul class="sorting-list">
       <li>
-        <a href="#">По цене</a>
+        <a href="#" class="sorting-list-active">По цене</a>
       </li>
       <li>
         <a href="#">По типу</a>
@@ -85,8 +88,8 @@
         <a href="#">По рейтингу</a>
       </li>
     </ul>
-    <button class="button visually-hidden">Кнопочка вверх</button>
-    <button class="button visually-hidden">Кнопочка вниз</button>
+    <button class="visually-hidden">Кнопочка вверх</button>
+    <button class="visually-hidden">Кнопочка вниз</button>
   </div>
   <ul class="hotels-list">
     <li class="hotels-list-item hotel">
@@ -102,7 +105,7 @@
       </div>
       <div class="hotel-second-column">
         <p>от 4000 р.</p>
-        <button class="hotel-book button-primary">Забронировать</button>
+        <button class="hotel-book-btn button">Забронировать</button>
       </div>
       <div class="hotel-rating">
         <img src="http://placehold.it/150x100" alt="Звездочки" width="60" height="20">
@@ -122,7 +125,7 @@
       </div>
       <div class="hotel-second-column">
         <p>от 3000 р.</p>
-        <button class="hotel-book-btn">Забронировать</button>
+        <button class="hotel-book-btn button">Забронировать</button>
       </div>
       <div class="hotel-rating">
         <img src="http://placehold.it/150x100" alt="Звездочки" width="60" height="20">
@@ -142,7 +145,7 @@
       </div>
       <div class="hotel-second-column">
         <p>от 2000 р.</p>
-        <button class="hotel-book-btn">Забронировать</button>
+        <button class="hotel-book-btn button">Забронировать</button>
       </div>
       <div class="hotel-rating">
         <img src="http://placehold.it/150x100" alt="Звездочки" width="60" height="20">
@@ -154,16 +157,16 @@
     <p class="footer-hashtag">#Visitsedona</p>
     <ul class="social-btn-list">
       <li>
-        <a href="#" class="social-btn social-btn-twitter" aria-label="Твиттер">T</a>
+        <a href="#" class="social-btn social-btn-twitter" aria-label="Твиттер">Twitter</a>
       </li>
       <li>
-        <a href="#" class="social-btn social-btn-twitter" aria-label="Фейсбук">Ф</a>
+        <a href="#" class="social-btn social-btn-twitter" aria-label="Фейсбук">Facebook</a>
       </li>
       <li>
-        <a href="#" class="social-btn social-btn-yt" aria-label="YouTube">Y</a>
+        <a href="#" class="social-btn social-btn-yt" aria-label="YouTube">Youtube</a>
       </li>
     </ul>
-    <p>Website by</p>
+    <p class="footer-copyrigh">Website by</p>
     <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML-Academy">
       <img src="img/logo-htmlacademy.svg" alt="Лого HTML-Academy" width="115" height="41">
     </a>
