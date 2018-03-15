@@ -42,8 +42,9 @@ a {
   font-weight: bold;
   line-height: 26px;
 }
+
 .main-navigation a.active {
-    color: #766357;
+  color: #766357;
 }
 
 .main-navigation a:hover,
@@ -54,8 +55,6 @@ a {
 .main-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
-
 
 .main-header {
   background-color: #91b8d7;
@@ -235,7 +234,7 @@ a {
 }
 
 .sorting-list a.sorting-list-active {
-    color: #81b3d2;
+  color: #81b3d2;
 }
 
 .sorting-list a:hover,
@@ -255,17 +254,17 @@ a {
   list-style: none;
 }
 
-.hotel h3 a {
+.hotel-name a {
   color: #000000;
   font-size: 21px;
 }
 
-.hotel h3 a:hover,
-.hotel h3 a:focus {
+.hotel-name a:hover,
+.hotel-name a:focus {
   color: #81b3d2;
 }
 
-.hotel h3 a:active {
+.hotel-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
