@@ -11,11 +11,6 @@
 
 <body>
   <div class="content">
-    <div class="main-logo">
-      <a href="index.html">
-        <img src="img/logo_mobile.png" alt="Логотип Седоны" width="138" height="70">
-      </a>
-    </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
@@ -31,6 +26,11 @@
           <a href="inner.html">Гостиницы</a>
         </li>
       </ul>
+      <div class="main-logo">
+        <a href="index.html" class="main-logo">
+          <img src="img/logo_mobile.png" alt="Логотип Седоны" width="138" height="70">
+        </a>
+      </div>
     </nav>
     <main>
       <header class="main-header">
@@ -39,15 +39,14 @@
         </div>
       </header>
       <div class="text-block">
-        <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="slogan">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="text-block-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <section class="reason-item">
         <div class="reason-item-text">
-          <h3>Настоящий
-            <br> городок</h3>
-          <p>№1</p>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <h3>Настоящий городок</h3>
+          <span class="reason-number">№1</span>
+          <p>Седона &#8212; не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="reason-item-img">
           <img src="img/town_full.jpg" alt="Фото города" width="800" height="401">
@@ -79,7 +78,7 @@
       <section class="reason-item reason-item-reverse">
         <div class="reason-item-text">
           <h3>Там есть мост дьявола</h3>
-          <p>№2</p>
+          <span class="reason-number">№2</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div class="reason-item-img">
@@ -90,17 +89,17 @@
         <ul class="reasons-list">
           <li>
             <h3>Небольшая площадь</h3>
-            <span>№3</span>
+            <span class="reason-number">№3</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li>
             <h3>Красивая дорога</h3>
-            <span>№4</span>
+            <span class="reason-number">№4</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li>
             <h3>Мало туристов</h3>
-            <span>№5</span>
+            <span class="reason-number">№5</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
@@ -110,25 +109,29 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button type="button" class="button btn-search">Поиск гостиниц в Седоне</button>
         </div>
-        <form action="https://echo.htmlacademy.ru" class="searching-form">
-          <p>
-            <label for="searching-form-check-in">Дата заезда:</label>
-            <input type="date" name="date" id="searching-form-check-in">
-          </p>
-          <p>
-            <label for="searching-form-check-out">Дата выезда:</label>
-            <input type="date" name="date" id="searching-form-check-out">
-          </p>
-          <label for="adults-quantity">Взрослые:</label>
-          <input type="number" name="quantity" id="adults-quantity" min="1">
-          <label for="children-quantity">Дети:</label>
-          <input type="number" name="quantity" id="children-quantity" min="0">
-          <p>
-            <input type="submit" value="Найти" class="finder-btn">
-          </p>
-        </form>
+        <div class="searching-box">
+          <button type="button" class="button btn-search">Поиск гостиницы в Седоне</button>
+          <div class="form-wrapper">
+            <form action="https://echo.htmlacademy.ru" class="searching-form">
+              <p class="searching-form-date">
+                <label for="searching-form-check-in">Дата заезда:</label>
+                <input type="text" name="date" id="searching-form-check-in" value="24 апреля 2017">
+              </p>
+              <p class="searching-form-date">
+                <label for="searching-form-check-out">Дата выезда:</label>
+                <input type="text" name="date" id="searching-form-check-out" value="4 июня 2017">
+              </p>
+              <p class="searching-form-quantity">
+                <label for="adults-quantity">Взрослые:</label>
+                <input type="number" name="quantity" id="adults-quantity" min="1">
+                <label for="children-quantity">Дети:</label>
+                <input type="number" name="quantity" id="children-quantity" min="0">
+              </p>
+              <input type="submit" value="Найти" class="finder-btn">
+            </form>
+          </div>
+        </div>
       </section>
       <div class="map">
         <img src="img/map_full.png" alt="Карта Седоны" width="1200" height="593">

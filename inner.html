@@ -11,11 +11,6 @@
 
 <body>
   <div class="content">
-    <div class="main-logo">
-      <a href="index.html">
-        <img src="img/logo_mobile.png" alt="Логотип Седоны" width="138" height="70">
-      </a>
-    </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
@@ -28,9 +23,14 @@
           <a href="#">Карта штата</a>
         </li>
         <li>
-          <a href="inner.html" class="active">Гостиницы</a>
+          <a href="inner.html">Гостиницы</a>
         </li>
       </ul>
+      <div class="main-logo">
+        <a href="index.html" class="main-logo">
+          <img src="img/logo_mobile.png" alt="Логотип Седоны" width="138" height="70">
+        </a>
+      </div>
     </nav>
     <form class="filter-search" action="https://echo.htmlacademy.ru" method="post">
       <div class="filter-search-options">
@@ -98,88 +98,79 @@
         </ul>
       </div>
       <div class="sorting-list-btn">
-        <button class="visually-hidden">Кнопочка вверх</button>
-        <button class="visually-hidden">Кнопочка вниз</button>
+        <button class="visually-hidde">Кнопочка вверх</button>
+        <button class="visually-hidde">Кнопочка вниз</button>
       </div>
     </div>
     <ul class="hotels-list">
       <li class="hotels-list-item">
         <div class="hotel">
-          <img src="img/hotels-1.jpg" alt="Фото гостиницы" width="150" height="100">
-          <div>
+          <img src="img/hotels-1.jpg" alt="Фото гостиницы" width="135" height="90">
+          <div class="hotel-information">
             <h3 class="hotel-name">
               <a href="#">Amara resort &amp; spa</a>
             </h3>
-            <div class="hotel-information">
-              <div class="hotel-first-column">
-                <p>Гостиница</p>
-                <a href="#" class="hotel-more">Подробнее</a>
-              </div>
-              <div class="hotel-second-column">
-                <p>от 4000 р.</p>
-                <button class="hotel-book-btn button">Забронировать</button>
-              </div>
+            <div class="hotel-data">
+              <span class="hotel-type">Гостиница</span>
+              <span class="hotel-prise">от 4000 р.</span>
+            </div>
+            <div class="hotels-btn">
+              <a href="#" class="hotel-more">Подробнее</a>
+              <button class="hotel-book-btn button">Забронировать</button>
             </div>
           </div>
         </div>
         <div class="hotel-rating">
           <img src="http://placehold.it/150x100" alt="Звездочки" width="60" height="20">
-          <p class="hotel-rating-text">Рейтинг 8,5</p>
+          <p class="hotel-rating-text">Рейтинг: 8,5</p>
         </div>
       </li>
       <li class="hotels-list-item">
         <div class="hotel">
-          <img src="img/hotels-2.jpg" alt="Фото апартаментов" width="150" height="100">
-          <div>
+          <img src="img/hotels-2.jpg" alt="Фото апартаментов" width="135" height="90">
+          <div class="hotel-information">
             <h3 class="hotel-name">
               <a href="#">Desert Quail Inn</a>
             </h3>
-            <div class="hotel-information">
-              <div class="hotel-first-column">
-                <p>Мотель</p>
-                <a href="#" class="hotel-more">Подробнее</a>
-              </div>
-              <div class="hotel-second-column">
-                <p>от 3000 р.</p>
-                <button class="hotel-book-btn button">Забронировать</button>
-              </div>
+            <div class="hotel-data">
+              <span class="hotel-type">Мотель</span>
+              <span class="hotel-prise">от 3000 р.</span>
+            </div>
+            <div class="hotels-btn">
+              <a href="#" class="hotel-more">Подробнее</a>
+              <button class="hotel-book-btn button">Забронировать</button>
             </div>
           </div>
         </div>
         <div class="hotel-rating">
           <img src="http://placehold.it/150x100" alt="Звездочки" width="60" height="20">
-          <p class="hotel-rating-text">Рейтинг 8,9</p>
+          <p class="hotel-rating-text">Рейтинг: 8,9</p>
         </div>
       </li>
       <li class="hotels-list-item">
         <div class="hotel">
-          <p>
-            <img src="img/hotels-3.jpg" alt="Фото апартаментов" width="150" height="100">
-          </p>
-          <div>
+          <img src="img/hotels-3.jpg" alt="Фото апартаментов" width="135" height="90">
+          <div class="hotel-information">
             <h3 class="hotel-name">
-              <a>Desert Quail Inn</a>
+              <a>Villas at Poco Diablo</a>
             </h3>
-            <div class="hotel-information">
-              <div class="hotel-first-column">
-                <p>Апартаменты</p>
-                <a href="#" class="hotel-more">Подробнее</a>
-              </div>
-              <div class="hotel-second-column">
-                <p>от 2000 р.</p>
-                <button class="hotel-book-btn button">Забронировать</button>
-              </div>
+            <div class="hotel-data">
+              <span class="hotel-type">Апартаменты</span>
+              <span class="hotel-price">от 2000 р.</span>
+            </div>
+            <div class="hotels-btn">
+              <a href="#" class="hotel-more">Подробнее</a>
+              <button class="hotel-book-btn button">Забронировать</button>
             </div>
           </div>
         </div>
         <div class="hotel-rating">
           <img src="http://placehold.it/150x100" alt="Звездочки" width="60" height="20">
-          <p class="hotel-rating-text">Рейтинг 9,2</p>
+          <p class="hotel-rating-text">Рейтинг: 9,2</p>
         </div>
       </li>
     </ul>
     <footer class="main-footer">
-
       <p class="footer-hashtag footer-item">#Visitsedona</p>
       <ul class="social-btn-list footer-item">
         <li>
