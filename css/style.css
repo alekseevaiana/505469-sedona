@@ -191,7 +191,7 @@ input[type="radio"].visually-hidden {
   left: 175px;
   top: 9px;
   content: "";
-  width: 9px; 
+  width: 9px;
   height: 2px;
   background-color: #ffffff;
 }
@@ -201,10 +201,10 @@ input[type="radio"].visually-hidden {
   left: 216px;
   top: 9px;
   content: "";
-  width: 9px; 
+  width: 9px;
   height: 2px;
   background-color: #ffffff;
-} 
+}
 
 .reasons-reason-number::before {
   background-color: #333333;
@@ -547,7 +547,6 @@ input.finder-btn:active {
 
 .filter-search-options {
   display: flex;
-  width: 600px;
 }
 
 .filter-search fieldset:first-child {
@@ -556,7 +555,6 @@ input.finder-btn:active {
 }
 
 .filter-search-price {
-  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -564,6 +562,7 @@ input.finder-btn:active {
 
 .filter-search {
   display: flex;
+  justify-content: space-between;
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../img/inner_bcg_.jpg");
