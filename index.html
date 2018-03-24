@@ -58,20 +58,17 @@
           <li class="recommendation-item">
             <img src="img/icon-1.svg" alt="Жилье" width="75" height="72">
             <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем
-              <br> мотеле, все как в кино!</p>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="recommendation-item">
             <img src="img/icon-3.svg" alt="Еда" width="75" height="72">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер,
-              <br> вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="recommendation-item">
             <img src="img/icon-2.svg" alt="Сувениры" width="75" height="72">
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного
-              <br> производства!</p>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
@@ -89,38 +86,35 @@
         <ul class="reasons-list">
           <li>
             <h3>Небольшая площадь</h3>
-            <span class="reason-number">№3</span>
+            <span class="reason-number reasons-reason-number">№3</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li>
             <h3>Красивая дорога</h3>
-            <span class="reason-number">№4</span>
+            <span class="reason-number reasons-reason-number">№4</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li>
             <h3>Мало туристов</h3>
-            <span class="reason-number">№5</span>
+            <span class="reason-number reasons-reason-number">№5</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
       <section class="searching">
-        <div class="searching-text">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,
-            <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        </div>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="searching-box">
           <button type="button" class="button btn-search">Поиск гостиницы в Седоне</button>
           <div class="form-wrapper">
             <form action="https://echo.htmlacademy.ru" class="searching-form">
               <p class="searching-form-date">
                 <label for="searching-form-check-in">Дата заезда:</label>
-                <input type="text" name="date" id="searching-form-check-in" value="24 апреля 2017">
+                <input class="searching-form-check-in" type="text" name="date" id="searching-form-check-in" placeholder="24 апреля 2017">
               </p>
               <p class="searching-form-date">
                 <label for="searching-form-check-out">Дата выезда:</label>
-                <input type="text" name="date" id="searching-form-check-out" value="4 июня 2017">
+                <input class="searching-form-check-out" type="text" name="date" id="searching-form-check-out" placeholder="4 июня 2017">
               </p>
               <p class="searching-form-quantity">
                 <label for="adults-quantity">Взрослые:</label>
@@ -137,17 +131,32 @@
         <img src="img/map_full.png" alt="Карта Седоны" width="1200" height="593">
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="footer footer-main">
       <p class="footer-hashtag footer-item">#Visitsedona</p>
       <ul class="social-btn-list footer-item">
         <li>
-          <a href="#" class="social-btn social-btn-twitter" aria-label="Твиттер">Twitter</a>
+          <a href="#" class="social-btn social-btn-twitter" aria-label="Твиттер">
+            <span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 17 15">
+              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 
+              1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 
+              2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 
+              1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"
+              />
+          </a>
         </li>
         <li>
-          <a href="#" class="social-btn social-btn-twitter" aria-label="Фейсбук">Facebook</a>
+          <a href="#" class="social-btn social-btn-twitter" aria-label="Фейсбук">
+            <span class="visually-hidden">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+          </a>
         </li>
         <li>
-          <a href="#" class="social-btn social-btn-yt" aria-label="Ютьюб">Youtube</a>
+          <a href="#" class="social-btn social-btn-yt" aria-label="Ютьюб">
+            <span class="visually-hidden">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+          </a>
         </li>
       </ul>
       <div class="footer-item footer-copyright">

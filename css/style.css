@@ -10,6 +10,7 @@ body {
 }
 
 .content {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -182,6 +183,35 @@ input[type="radio"].visually-hidden {
 
 .reason-number {
   margin-bottom: 23px;
+  position: relative;
+}
+
+.reason-number::before {
+  position: absolute;
+  left: 175px;
+  top: 9px;
+  content: "";
+  width: 9px; 
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.reason-number::after {
+  position: absolute;
+  left: 216px;
+  top: 9px;
+  content: "";
+  width: 9px; 
+  height: 2px;
+  background-color: #ffffff;
+} 
+
+.reasons-reason-number::before {
+  background-color: #333333;
+}
+
+.reasons-reason-number::after {
+  background-color: #333333;
 }
 
 .reason-item-text p {
@@ -232,7 +262,8 @@ input[type="radio"].visually-hidden {
 }
 
 .recommendation-item p {
-  margin: 0;
+  margin: 0 auto;
+  width: 290px;
 }
 
 .reasons {
@@ -281,21 +312,20 @@ input[type="radio"].visually-hidden {
   padding-top: 50px;
 }
 
-.searching-text {
+.searching p {
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .searching h2 {
+  text-align: center;
   font-size: 30px;
   color: #000000;
   line-height: 36px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 25px;
-}
-
-.searching-text p {
-  margin: 0;
-  margin-bottom: 50px;
 }
 
 .searching-box {
@@ -359,7 +389,22 @@ input[type="radio"].visually-hidden {
 
 .searching-form-date input {
   padding-left: 15px;
+  padding-right: 31px;
   text-transform: uppercase;
+}
+
+.searching-form-check-in {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 316px center;
+  cursor: pointer;
+}
+
+.searching-form-check-out {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 316px center;
+  cursor: pointer;
 }
 
 .searching-form label {
@@ -417,10 +462,15 @@ input.finder-btn:active {
   height: 593px;
 }
 
-.main-footer {
-  background-color: rgba(254, 254, 254, 0.1);
+.footer {
+  background-color: rgba(254, 254, 254, 0.9);
   display: flex;
   min-height: 120px;
+}
+
+.footer-main {
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-item {
@@ -449,18 +499,27 @@ input.finder-btn:active {
   margin-right: 6px;
 }
 
-.social-btn-list a {
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #81b3d2;
   color: #ffffff;
+  width: 46px;
+  height: 48px;
 }
 
-.social-btn-list a:hover,
-.social-btn-list a:focus {
+.social-btn:hover,
+.social-btn:focus {
   background-color: #669ec0;
 }
 
-.social-btn-list a:active {
+.social-btn:active {
   background-color: #5496bd;
+}
+
+.social-btn:active path {
+  opacity: 0.3;
 }
 
 .footer-copyright {
@@ -479,6 +538,11 @@ input.finder-btn:active {
 .footer-logo {
   height: 41px;
   align-self: center;
+}
+
+.footer-logo:hoover,
+.footer-logo:focus {
+  fill: #81b3d2;
 }
 
 .filter-search-options {
@@ -533,6 +597,7 @@ input.finder-btn:active {
 
 .sorting {
   display: flex;
+  justify-content: space-between;
   padding-top: 30px;
   padding-right: 72px;
   padding-bottom: 28px;
@@ -541,14 +606,30 @@ input.finder-btn:active {
 
 .sorting-text {
   display: flex;
-  width: 600px;
 }
 
-.sorting-list-btn {
-  display: flex;
-  justify-content: flex-end;
-  width: 241px;
-  margin-left: auto;
+.sorting-list-btn button {
+  display: inline-block;
+}
+
+.sorting-btn-up {
+  font-size: 0;
+  height: 11px;
+  width: 12px;
+  border: none;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.sorting-btn-down {
+  font-size: 0;
+  height: 11px;
+  width: 12px;
+  border: none;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .sorting h3 {
