@@ -80,13 +80,9 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li {
   width: 300px;
-  box-sizing: border-box;
-}
-
-.site-navigation a {
-  display: block;
   padding-top: 15px;
   padding-bottom: 15px;
+  box-sizing: border-box;
 }
 
 .site-navigation li:nth-child(1) {
@@ -146,7 +142,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 49px;
-  
 }
 
 .slogan {
@@ -177,6 +172,23 @@ input[type="radio"].visually-hidden {
   padding-bottom: 60px;
 }
 
+.reason-item h3,
+.reasons h3 {
+  font-size: 21px;
+  width: 152px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+
+.reason-number {
+  margin-bottom: 23px;
+}
+
+.reason-item-text p {
+  width: 285px;
+  margin: 0 auto;
+}
+
 .reason-item-img {
   width: 800px;
   overflow: hidden;
@@ -189,21 +201,6 @@ input[type="radio"].visually-hidden {
 
 .reason-item-reverse {
   flex-direction: row-reverse;
-}
-
-.reason-item h3,
-.reasons h3 {
-  font-size: 21px;
-  margin: 0;
-  margin-bottom: 23px;
-}
-
-.reason-item-text p {
-  margin: 0;
-}
-
-.reason-number {
-  margin-bottom: 23px;
 }
 
 .recommendations-list {
@@ -238,7 +235,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-
 .reasons {
   background-color: #eeeeee;
 }
@@ -251,7 +247,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 60px;
-  
 }
 
 .reasons-list li {
@@ -264,26 +259,26 @@ input[type="radio"].visually-hidden {
 
 .reasons-list h3 {
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 25px;
   padding: 0;
 }
 
 .reason-number {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
 }
 
 .reasons-list p {
+  width: 271px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .searching {
   padding: 0;
   margin: 0;
   padding-top: 50px;
-  
 }
 
 .searching-text {
@@ -314,7 +309,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   width: 100%;
   padding-top: 32px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 .form-wrapper {
@@ -547,7 +542,6 @@ input.finder-btn:active {
 .sorting-text {
   display: flex;
   width: 600px;
-  
 }
 
 .sorting-list-btn {
@@ -621,11 +615,12 @@ a.sorting-list-active:active {
 
 .hotels-list-item {
   display: flex;
+  justify-content: space-between;
   padding-right: 72px;
   padding-left: 72px;
   padding-top: 25px;
   padding-bottom: 31px;
-  border-top: 1px solid #e5e5e5; 
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotels-list-item:last-child {
@@ -641,13 +636,6 @@ a.sorting-list-active:active {
   align-self: flex-end;
   height: 90px;
 }
-
-.hotel-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 
 .hotel-name {
   font-size: 21px;
@@ -674,23 +662,29 @@ a.sorting-list-active:active {
 }
 
 .hotel-type {
-  width: 110px;
+  min-width: 110px;
   margin-right: 5px;
+}
+
+.hotels-btn {
+  font-size: 0;
 }
 
 .hotel-more {
   display: inline-block;
+  vertical-align: middle;
   width: 110px;
   font: inherit;
   font-weight: bold;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
   margin: 0;
+  margin-right: 6px;
 }
 
 .hotel-more:hover,
@@ -705,21 +699,19 @@ a.sorting-list-active:active {
 
 .hotel-book-btn {
   display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
   padding-top: 5px;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 20px;
 }
 
 .hotel-rating {
-  
   display: flex;
-  width: 241px;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  text-align: center;
-  margin-left: auto;
 }
 
 .hotel-rating-text {
@@ -734,5 +726,4 @@ a.sorting-list-active:active {
   padding-left: 15px;
   padding-right: 11px;
   padding-top: 3px;
-  
 }
