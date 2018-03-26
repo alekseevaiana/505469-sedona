@@ -215,7 +215,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-item-text p {
-  width: 285px;
+  width: 305px;
   margin: 0 auto;
 }
 
@@ -241,7 +241,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   padding: 0;
   padding-top: 60px;
-  padding-bottom: 83px;
+  padding-bottom: 81px;
   margin: 0;
 }
 
@@ -313,10 +313,11 @@ input[type="radio"].visually-hidden {
 }
 
 .searching>p {
-  width: 440px;
+  width: 436px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   text-align: center;
+  line-height: 24px;
 }
 
 .searching h2 {
@@ -325,7 +326,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   line-height: 36px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .searching-box {
@@ -375,9 +376,9 @@ input[type="radio"].visually-hidden {
   background-color: #ebebeb;
 }
 
-.searching-form input:active {
+.searching-form input[name="date"]:active {
   background-color: #ffffff;
-  border-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 .searching-form-date {
@@ -431,15 +432,12 @@ input[type="radio"].visually-hidden {
 }
 
 .searching-form-quantity {
-  position: relative;
   display: flex;
   width: 458px;
   margin: 0;
-  
 }
 
 .searching-form-quantity label {
-  position: relative;
   vertical-align: top;
 }
 
@@ -447,7 +445,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
   width: 38px;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .searching-form-quantity label[for="children-quantity"] {
@@ -489,8 +486,8 @@ input.finder-btn {
   color: #ffffff;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 40px;
-  margin-top: 55px;
+  padding-bottom: 42px;
+  margin-top: 54px;
 }
 
 input.finder-btn:hover,
@@ -606,7 +603,7 @@ input.finder-btn:active {
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../img/inner_bcg_.jpg");
-  padding: 25px 72px;
+  padding: 28px 70px;
 }
 
 .filter-search-options {
@@ -654,7 +651,7 @@ input.finder-btn:active {
 .filter-list-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -45px;
+  left: -39px;
   top: 0;
   width: 25px;
   height: 25px;
@@ -666,7 +663,7 @@ input.finder-btn:active {
 .filter-list-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
-  left: -45px;
+  left: -39px;
   top: 0;
   width: 25px;
   height: 25px;
@@ -694,7 +691,7 @@ input.finder-btn:active {
 
 .filter-search-price-controls {
   position: relative;
-  height: 36px;
+  height: 31px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -817,9 +814,11 @@ input.finder-btn:active {
 
 .sorting-list-btn button {
   display: inline-block;
+  background-color: #ffffff;
 }
 
-.sorting-list-btn button:hover path {
+.sorting-list-btn button:hover path,
+.sorting-list-btn button:focus path {
   fill: black;
 }
 
