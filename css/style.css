@@ -215,7 +215,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-item-text p {
-  width: 305px;
+  width: 285px;
   margin: 0 auto;
 }
 
@@ -241,7 +241,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   padding: 0;
   padding-top: 60px;
-  padding-bottom: 81px;
+  padding-bottom: 83px;
   margin: 0;
 }
 
@@ -313,10 +313,10 @@ input[type="radio"].visually-hidden {
 }
 
 .searching>p {
+  width: 440px;
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
   text-align: center;
-  line-height: 24px;
 }
 
 .searching h2 {
@@ -325,7 +325,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   line-height: 36px;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .searching-box {
@@ -435,6 +435,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 458px;
   margin: 0;
+  
 }
 
 .searching-form-quantity label {
@@ -488,8 +489,8 @@ input.finder-btn {
   color: #ffffff;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 42px;
-  margin-top: 54px;
+  padding-bottom: 40px;
+  margin-top: 55px;
 }
 
 input.finder-btn:hover,
@@ -605,7 +606,7 @@ input.finder-btn:active {
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../img/inner_bcg_.jpg");
-  padding: 28px 70px;
+  padding: 25px 72px;
 }
 
 .filter-search-options {
@@ -653,7 +654,7 @@ input.finder-btn:active {
 .filter-list-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -39px;
+  left: -45px;
   top: 0;
   width: 25px;
   height: 25px;
@@ -665,7 +666,7 @@ input.finder-btn:active {
 .filter-list-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
-  left: -39px;
+  left: -45px;
   top: 0;
   width: 25px;
   height: 25px;
@@ -693,7 +694,7 @@ input.finder-btn:active {
 
 .filter-search-price-controls {
   position: relative;
-  height: 31px;
+  height: 36px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -816,11 +817,9 @@ input.finder-btn:active {
 
 .sorting-list-btn button {
   display: inline-block;
-  background-color: #ffffff;
 }
 
-.sorting-list-btn button:hover path,
- .sorting-list-btn button:focus path{
+.sorting-list-btn button:hover path {
   fill: black;
 }
 
