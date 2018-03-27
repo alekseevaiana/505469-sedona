@@ -691,11 +691,14 @@ input.finder-btn:active {
 
 .filter-search-price-controls {
   position: relative;
-  height: 31px;
+  width: 318px;
+  height: 36px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
+
+  box-sizing: border-box;
 }
 
 .filter-search-price-controls::after {
@@ -712,8 +715,8 @@ input.finder-btn:active {
 .filter-search-price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  vertical-align: bottom;
   cursor: pointer;
 }
 
@@ -724,7 +727,7 @@ input.finder-btn:active {
 
 .filter-search-price-controls .max-price {
   width: 90px;
-  padding-left: 55px;
+  padding-left: 56px;
 }
 
 .filter-search-price-controls input {
@@ -774,14 +777,17 @@ input.finder-btn:active {
 
 .filter-search-btn {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0;
+  margin-left: 86px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-right: 32px;
+  padding-left: 35px;
   background: transparent;
-  line-height: 20px;
+  line-height: 21px;
   font-size: 14px;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -879,6 +885,7 @@ input.finder-btn:active {
   padding: 0;
   width: 249px;
   white-space: nowrap;
+  
 }
 
 .sorting-list li:first-child,
@@ -888,10 +895,12 @@ input.finder-btn:active {
 
 .sorting-list a {
   color: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px dotted #81b3d2;
 }
 
 a.sorting-list-active {
   color: #81b3d2;
+  border-bottom: none;
 }
 
 .sorting-list a:hover,
@@ -901,6 +910,7 @@ a.sorting-list-active {
 
 .sorting-list a:active {
   color: #000000;
+  border-bottom: none;
 }
 
 a.sorting-list-active:active {
