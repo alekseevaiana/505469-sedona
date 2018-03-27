@@ -49,24 +49,26 @@
           <p>Седона &#8212; не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="reason-item-img">
-          <img src="img/town_full.jpg" alt="Фото города" width="800" height="401">
+          <img src="img/town_256.jpg" alt="Фото города" width="800" height="401">
         </div>
       </section>
       <section class="recommendations">
         <h2 class="visually-hidden">Рекомендации</h2>
         <ul class="recommendations-list">
           <li class="recommendation-item">
-            <img src="img/icon-1.svg" alt="Жилье" width="75" height="72">
+            <div class="recomendation-item-img-1"></div>
+            <!-- <img src="img/icon-1.svg" alt="Жилье" width="75" height="72"> -->
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="recommendation-item">
-            <img src="img/icon-3.svg" alt="Еда" width="75" height="72">
+            <div class="recomendation-item-img-2"></div>
+            <!-- <img src="img/icon-3.svg" alt="Еда" width="75" height="72"> -->
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="recommendation-item">
-            <img src="img/icon-2.svg" alt="Сувениры" width="75" height="72">
+            <div class="recomendation-item-img-3"></div>
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -79,7 +81,7 @@
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div class="reason-item-img">
-          <img src="img/canyon_full.jpg" alt="Фото каньона" width="800" height="401">
+          <img src="img/canyon_256.jpg" alt="Фото каньона" width="800" height="401">
         </div>
       </section>
       <section class="reasons">
@@ -122,7 +124,7 @@
               </p>
               <p class="searching-form-date">
                 <label for="searching-form-check-out">Дата выезда:</label>
-                <input class="searching-form-check-out" type="text" name="date" id="searching-form-check-out" placeholder="4 июня 2017">
+                <input class="searching-form-check-out" type="text" name="date" id="searching-form-check-out" placeholder="4 июля 2017">
                 <a class="searching-form-check-out-link" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                     <path fill="#cacaca" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
@@ -213,6 +215,27 @@
       </div>
     </footer>
   </div>
+  <script>
+    var link = document.querySelector(".btn-search");
+    var popup = document.querySelector(".form-wrapper");
+    var date = popup.querySelector("[type=text");
+    //var quantity = popup.querySelector()
+    var form = popup.querySelector("form");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.toggle("form-wrapper-show");
+      date.focus();
+    });
+
+    form.addEventListener("submit", function (evt) {
+      if (!date.value) {
+        evt.preventDefault();
+        console.log("Нужно ввести логин и пароль");
+      }
+    })
+
+  </script>
 </body>
 
 </html>
