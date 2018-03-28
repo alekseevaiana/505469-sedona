@@ -400,12 +400,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.searching-form input[name="date"]:hover,
-.searching-form input[name="date"]:focus {
+.searching-form input[name="date"]:hover {
   background-color: #ebebeb;
 }
 
-.searching-form input[name="date"]:active {
+.searching-form input[name="date"]:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -431,10 +430,14 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.searching-form-check-in-link {
+.searching-form-calendar {
   position: absolute;
   left: 428px;
   top: 8px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .searching-form-check-out-link {
@@ -517,6 +520,7 @@ input.finder-btn {
   padding-top: 15px;
   padding-bottom: 42px;
   margin-top: 54px;
+  cursor: pointer;
 }
 
 input.finder-btn:hover,
@@ -928,7 +932,7 @@ input.finder-btn:active {
 
 .sorting-list a {
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 2px dotted #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 a.sorting-list-active {
