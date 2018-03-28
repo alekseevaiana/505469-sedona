@@ -440,19 +440,12 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.searching-form-check-out-link {
-  position: absolute;
-  left: 428px;
-  top: 8px;
-}
-
-.searching-form-check-in-link:hover path,
-.searching-form-check-out-link:hover path {
+.searching-form-calendar:hover path,
+.searching-form-calendar:focus path{
   fill: #000000;
 }
 
-.searching-form-check-in-link:active path,
-.searching-form-check-out-link:active path {
+.searching-form-calendar:active path {
   fill: #81b3d2;
 }
 
