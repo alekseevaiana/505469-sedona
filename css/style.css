@@ -111,17 +111,13 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
-.main-navigation a.active {
+a.site-navigation-active {
   color: #766357;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
   color: #81b3d2;
-}
-
-.main-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-header {
@@ -375,10 +371,22 @@ input[type="radio"].visually-hidden {
   width: 568px;
   padding-top: 55px;
   padding-bottom: 55px;
+  animation-name: bounce;
+  animation-duration: 0.3s;
+  transform-origin: top;
 }
 
 .form-wrapper-show {
   display: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 .searching-form {
@@ -432,7 +440,7 @@ input[type="radio"].visually-hidden {
 
 .searching-form-calendar {
   position: absolute;
-  left: 428px;
+  right: 9px;
   top: 8px;
   padding: 0;
   border: none;
@@ -441,7 +449,7 @@ input[type="radio"].visually-hidden {
 }
 
 .searching-form-calendar:hover path,
-.searching-form-calendar:focus path{
+.searching-form-calendar:focus path {
   fill: #000000;
 }
 
@@ -691,6 +699,14 @@ input.finder-btn:active {
   background-position: 0 0;
 }
 
+.filter-list-input-checkbox:disabled+label::before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.filter-list-input-checkbox:checked+label::before {
+  display: none;
+}
+
 .filter-list-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
@@ -703,8 +719,8 @@ input.finder-btn:active {
   background-position: 0 0;
 }
 
-.filter-list-input-checkbox:checked+label::before {
-  display: none;
+.filter-list-input-checkbox:checked:disabled+label::after {
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .filter-search-price {
@@ -794,8 +810,14 @@ input.finder-btn:active {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(99, 100, 101, 1);
   cursor: pointer;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  border: 9px solid #ffffff;
+  top: -10px;
 }
 
 .range-toggle-min {
