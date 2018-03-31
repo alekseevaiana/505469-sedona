@@ -547,7 +547,8 @@ input.finder-btn:active {
 .footer {
   background-color: rgba(254, 254, 254, 0.9);
   display: flex;
-  min-height: 120px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   align-items: center;
 }
 
@@ -559,6 +560,7 @@ input.finder-btn:active {
 .footer-item {
   box-sizing: border-box;
   justify-content: center;
+  align-content: center;
   width: 400px;
   margin: 0;
   padding: 0;
@@ -574,8 +576,6 @@ input.finder-btn:active {
 .social-btn-list {
   display: flex;
   list-style: none;
-  width: 400px;
-  justify-content: center;
 }
 
 .social-btn-list li {
