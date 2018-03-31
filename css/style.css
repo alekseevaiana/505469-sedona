@@ -550,12 +550,6 @@ input.finder-btn:active {
   min-height: 120px;
   align-items: center;
 }
-.footer:after {
-
-  content: '';
-  min-height: inherit;
-  font-size:0;
-}
 
 .footer-main {
   position: absolute;
@@ -564,7 +558,6 @@ input.finder-btn:active {
 
 .footer-item {
   box-sizing: border-box;
-  align-self: center;
   justify-content: center;
   width: 400px;
   margin: 0;

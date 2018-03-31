@@ -1,8 +1,7 @@
 var link = document.querySelector(".btn-search");
 var popup = document.querySelector(".form-wrapper");
-var date = popup.querySelector("[type=text]");
-//var quantity = popup.querySelector()
-var form = popup.querySelector("form");
+var date = popup.querySelector(".searching-form-input");
+var form = popup.querySelector(".searching-form");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
