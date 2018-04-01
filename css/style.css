@@ -47,8 +47,7 @@ a {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="checkbox"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -218,18 +217,15 @@ a.site-navigation-active:active {
 .reason-item-img {
   width: 800px;
   overflow: hidden;
-  /* проверить hidden */
 }
 
 .reason-item-img img {
   display: block;
   height: 256px;
-  /* проверить */
 }
 
 .reason-item-reverse {
   flex-direction: row-reverse;
-  /* check */
 }
 
 .recommendations-list {
@@ -368,10 +364,8 @@ a.site-navigation-active:active {
 
 .form-wrapper {
   display: block;
-  /* check */
   position: absolute;
   z-index: 2;
-  /* check */
   background-color: #ffffff;
   width: 568px;
   padding-top: 55px;
