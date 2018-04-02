@@ -37,15 +37,15 @@
           <ul class="filter-list">
             <li>
               <input class="filter-list-input-checkbox visually-hidden" type="checkbox" name="pool" id="infrastructure-pool" checked>
-              <label for="infrastructure-pool">Бассейн</label>
+              <label for="infrastructure-pool" aria-label="Выбрвть бассейн">Бассейн</label>
             </li>
             <li>
               <input type="checkbox" class="filter-list-input-checkbox visually-hidden" name="parking" id="infrastructure-parking">
-              <label for="infrastructure-parking">Парковка</label>
+              <label for="infrastructure-parking" aria-label="Выбрать парковку">Парковка</label>
             </li>
             <li class="filter-list-last-item">
               <input type="checkbox" class="filter-list-input-checkbox visually-hidden" name="wi-fi" id="infrastructure-wi-fi">
-              <label for="infrastructure-wi-fi">Wi-Fi</label>
+              <label for="infrastructure-wi-fi" aria-label="Выбрать Вай-фай">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
@@ -54,15 +54,15 @@
           <ul class="filter-list">
             <li>
               <input type="checkbox" class="filter-list-input-checkbox visually-hidden" name="hotel" id="living-type-hotel" checked>
-              <label for="living-type-hotel">Гостиница</label>
+              <label for="living-type-hotel" aria-label="Выбрать гостиницу">Гостиница</label>
             </li>
             <li>
               <input type="checkbox" class="filter-list-input-checkbox visually-hidden" name="motel" id="living-type-motel" checked>
-              <label for="living-type-motel">Мотель</label>
+              <label for="living-type-motel" aria-label="Выбрать мотель">Мотель</label>
             </li>
             <li class="filter-list-last-item">
               <input type="checkbox" class="filter-list-input-checkbox visually-hidden" name="wi-fi" id="living-type-apartment" checked>
-              <label for="living-type-apartment">Апартаменты</label>
+              <label for="living-type-apartment" aria-label="Выбрать Апартаменты">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
@@ -86,7 +86,7 @@
           <div class="range-toggle range-toggle-min"></div>
           <div class="range-toggle range-toggle-max"></div>
         </div>
-        <button class="filter-search-btn" type="submit">Показать</button>
+        <button class="filter-search-btn" type="submit" aria-label="Показать гостиницы">Показать</button>
       </div>
     </form>
     <div class="sorting">
@@ -95,13 +95,13 @@
         <p>Сортировка:</p>
         <ul class="sorting-list">
           <li>
-            <a href="#" class="sorting-list-active">По цене</a>
+            <a href="#" class="sorting-list-active" aria-label="Сортировать по цене">По цене</a>
           </li>
           <li>
-            <a href="#">По типу</a>
+            <a href="#" aria-label="Сортировать по типу">По типу</a>
           </li>
           <li>
-            <a href="#">По рейтингу</a>
+            <a href="#" aria-label="Сортировать по рейтингу">По рейтингу</a>
           </li>
         </ul>
       </div>
@@ -233,5 +233,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

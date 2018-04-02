@@ -1007,6 +1007,7 @@ a.sorting-list-active:active {
 
 .hotel-name a {
   color: #000000;
+  max-width: 750px;
 }
 
 .hotel-name a:hover,
