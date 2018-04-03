@@ -1000,6 +1000,7 @@ a.sorting-list-active:active {
 }
 
 .hotel-name {
+  width: 755px;
   font-size: 21px;
   margin: 0;
   margin-bottom: 6px;
@@ -1007,7 +1008,6 @@ a.sorting-list-active:active {
 
 .hotel-name a {
   color: #000000;
-  max-width: 750px;
 }
 
 .hotel-name a:hover,
