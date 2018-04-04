@@ -14,7 +14,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 10px 0 #e1e1e1;
+  box-shadow: 0 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -55,6 +55,7 @@ input[type="checkbox"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -365,13 +366,16 @@ a.site-navigation-active:active {
 .form-wrapper {
   display: block;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background-color: #ffffff;
   width: 568px;
   padding-top: 55px;
   padding-bottom: 55px;
+  -webkit-animation-name: bounce;
   animation-name: bounce;
+  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
+  -webkit-transform-origin: top;
   transform-origin: top;
 }
 
@@ -379,11 +383,24 @@ a.site-navigation-active:active {
   display: none;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
+    -webkit-transform: scaleY(0);
     transform: scaleY(0);
   }
   100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
 }
@@ -427,6 +444,18 @@ a.site-navigation-active:active {
   padding-left: 12px;
   padding-right: 31px;
   text-transform: uppercase;
+}
+
+.searching-form input::-webkit-input-placeholder {
+  color: black;
+}
+
+.searching-form input:-ms-input-placeholder {
+  color: black;
+}
+
+.searching-form input::-ms-input-placeholder {
+  color: black;
 }
 
 .searching-form input::placeholder {
@@ -536,6 +565,20 @@ input.finder-btn:active {
 .map {
   background-color: #e5e5e5;
   height: 593px;
+  position: relative;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+}
+
+.map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
 }
 
 .footer {
@@ -548,6 +591,7 @@ input.finder-btn:active {
 
 .footer-main {
   position: absolute;
+  z-index: 2;
   bottom: 0;
 }
 
@@ -702,6 +746,11 @@ input.finder-btn:active {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
+.filter-list-input-checkbox:focus+label::before,
+.filter-list-input-checkbox:focus+label::after {
+  outline: auto;
+}
+
 .filter-list-input-checkbox:checked+label::before {
   display: none;
 }
@@ -754,6 +803,7 @@ input.finder-btn:active {
   width: 2px;
   height: 22px;
   background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -876,12 +926,12 @@ input.finder-btn:active {
   background-color: #ffffff;
 }
 
-.sorting-list-btn button:hover path,
-.sorting-list-btn button:focus path {
+.sorting-btn-up:hover path,
+.sorting-btn-up:focus path {
   fill: black;
 }
 
-.sorting-list-btn button:active path {
+.sorting-btn-up:active path {
   fill: #81b3d2;
 }
 
@@ -930,6 +980,7 @@ input.finder-btn:active {
 
 .sorting-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   line-height: 18px;
@@ -991,6 +1042,7 @@ a.sorting-list-active:active {
 
 .hotel {
   display: flex;
+  max-width: 920px;
 }
 
 .hotel img {
@@ -1000,7 +1052,6 @@ a.sorting-list-active:active {
 }
 
 .hotel-name {
-  width: 755px;
   font-size: 21px;
   margin: 0;
   margin-bottom: 6px;
